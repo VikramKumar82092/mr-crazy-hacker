@@ -1,108 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <title>Vikram | Creator & Educator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <img src="images/logo.png" alt="logo">
-      <span>Vikram</span>
-    </div>
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-img">
+                <img src="https://via.placeholder.com/150" alt="Vikram"> </div>
+            <h1 class="name">Vikram</h1>
+            <p class="role">CONTENT CREATOR & TECH ENTHUSIAST</p>
+        </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#channels">Channels</a>
-      <a href="#social">Social</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#youtube">YouTube Channels</a></li>
+                <li><a href="#social">Social Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Hi, I'm <span>Vikram</span></h1>
-      <p>
-        I’m Vikram, a creator who loves electronics, experiments, and innovative ideas.
-        I share my learning journey through YouTube channels focused on technology,
-        electronics projects, and Indian culture. My goal is to make learning simple,
-        practical, and enjoyable for everyone.
-      </p>
-      <a href="#channels" class="btn">Explore My Channels</a>
-    </div>
+        <div class="sidebar-footer">
+            <p>© 2025 All Rights Reserved.</p>
+            <p>Made with ❤️ by Vikram</p>
+        </div>
+    </aside>
 
-    <div class="hero-img">
-      <img src="images/profile.jpg" alt="Vikram">
-    </div>
-  </div>
-</section>
+    <main class="main-content">
+        
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>I am <br> <span>a Creator</span></h2>
+                <p>Welcome to my digital space. I build communities through tech and culture content.</p>
+                <a href="#youtube" class="btn">VIEW MY WORK <i class="fa fa-briefcase"></i></a>
+            </div>
+        </section>
 
-<!-- CHANNELS -->
-<section id="channels" class="section">
-  <div class="container">
-    <h2>My YouTube Channels</h2>
+        <section id="youtube" class="section">
+            <h3 class="section-title">YouTube Channels</h3>
+            <div class="channel-grid">
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Mr Crazy Hacker</h4>
+                    <a href="https://youtube.com/@mrcrazyhacker2026" target="_blank" class="sub-btn">Visit Channel</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>VKTronics</h4>
+                    <a href="https://youtube.com/@indianstockscryptomarket" target="_blank" class="sub-btn">Visit Channel</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Indian Culture</h4>
+                    <a href="https://youtube.com/@indianculture881" target="_blank" class="sub-btn">Visit Channel</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Technical Helper</h4>
+                    <a href="https://youtube.com/@prajapatop1" target="_blank" class="sub-btn">Visit Channel</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Mr Crazy Hacker</h3>
-        <p>Technology & creative electronics content.</p>
-        <a href="https://youtube.com/@mrcrazyhacker2026" target="_blank">Visit</a>
-      </div>
+        <section id="social" class="section gray-bg">
+            <h3 class="section-title">Follow Me</h3>
+            <div class="social-icons-box">
+                <a href="https://www.facebook.com/share/17yEMC8xib/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram (ID: ___________vikram__________)</a>
+            </div>
+        </section>
 
-      <div class="card">
-        <h3>VKTronics</h3>
-        <p>Electronics projects & experiments.</p>
-        <a href="https://youtube.com/@indianstockscryptomarket" target="_blank">Visit</a>
-      </div>
+        <section id="contact" class="section">
+            <h3 class="section-title">Get In Touch</h3>
+            <div class="contact-details">
+                <div class="info-item">
+                    <i class="fa fa-phone"></i>
+                    <p>+91 8209234829</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-envelope"></i>
+                    <p>vikramkumar3227@gmail.com</p>
+                </div>
+            </div>
+        </section>
 
-      <div class="card">
-        <h3>Indian Culture</h3>
-        <p>Indian traditions & cultural knowledge.</p>
-        <a href="https://youtube.com/@indianculture881" target="_blank">Visit</a>
-      </div>
-    </div>
-  </div>
-</section>
+    </main>
 
-<!-- SOCIAL -->
-<section id="social" class="section light">
-  <div class="container">
-    <h2>Social Media</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Instagram</h3>
-        <p>Follow for updates & daily posts</p>
-        <a href="https://instagram.com/___________vikram__________" target="_blank">
-          Follow
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-    <p><strong>Name:</strong> Vikram</p>
-    <p><strong>Mobile:</strong> 8209234829</p>
-    <p><strong>Email:</strong> vikramkumar3227@gmail.com</p>
-  </div>
-</section>
-
-<footer>
-  © 2025 Vikram | Inspired by modern creator websites
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
