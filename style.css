@@ -1,88 +1,83 @@
 body {
-    margin: 0;
-    font-family: Orbitron, sans-serif;
-    background: #000;
-    color: #00ffcc;
-    text-align: center;
+  margin: 0;
+  font-family: Orbitron, sans-serif;
+  background: #000;
+  color: #00ffcc;
+  text-align: center;
 }
 
 .dark { background:#000; color:#00ffcc; }
 .light { background:#f5f5f5; color:#111; }
 
 #themeToggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: 1px solid #00ffcc;
-    color: inherit;
-    padding: 5px 10px;
-    cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: 1px solid #00ffcc;
+  color: inherit;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
 .hero { padding: 70px 20px; }
-.logo { width:120px; }
+.logo { width: 130px; }
 
-.glitch { font-size:55px; position:relative; }
-
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
-    position:absolute;
-    left:0;
-    width:100%;
+.glitch {
+  font-size: 50px;
+  position: relative;
 }
 
-.glitch::before { color:#ff00ff; top:-2px; }
-.glitch::after { color:#00ffff; top:2px; }
+.tagline {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.profile {
+  padding: 60px 20px;
+}
 
 .profile-img {
-    width:180px;
-    border-radius:50%;
-    border:3px solid #00ffcc;
+  width: 190px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  margin-bottom: 20px;
 }
 
 .terminal-box {
-    background:#000;
-    border:1px solid #00ffcc;
-    width:80%;
-    margin:30px auto;
-    padding:20px;
-    text-align:left;
-    font-size:14px;
+  background: #000;
+  border: 1px solid #00ffcc;
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
 }
 
-iframe {
-    width:90%;
-    max-width:700px;
-    height:400px;
-    border:2px solid #00ffcc;
+.youtube {
+  padding: 50px 20px;
 }
 
-.cards {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+.yt-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  text-decoration: none;
+  margin-top: 15px;
 }
 
-.card {
-    border:1px solid #00ffcc;
-    padding:15px;
-    width:160px;
+.yt-btn:hover {
+  background: #00ffcc;
+  color: #000;
 }
 
-.contact form {
-    display:flex;
-    flex-direction:column;
-    width:300px;
-    margin:auto;
+.contact {
+  padding: 50px 20px;
 }
 
-.contact input, .contact textarea, .contact button {
-    margin:8px 0;
-    padding:10px;
-    font-family:inherit;
+footer {
+  padding: 20px;
+  font-size: 14px;
 }
 
-footer { padding:20px; font-size:14px; }
