@@ -1,47 +1,90 @@
+/* =========================================
+   Vikram | Creator Website JavaScript
+   (CodeWithHarry-style clean behavior)
+========================================= */
+
 document.addEventListener("DOMContentLoaded", () => {
+  smoothScroll();
+  activeNavbar();
+  scrollReveal();
+});
 
-  const sections = document.querySelectorAll(".section");
-  const navLinks = document.querySelectorAll(".navbar a");
+/* =========================================
+   Smooth Scrolling for Navbar Links
+========================================= */
+function smoothScroll() {
+  const navLinks = document.querySelectorAll("nav a");
 
-  // Smooth scroll
   navLinks.forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
-      const id = link.getAttribute("href").substring(1);
-      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
     });
   });
+}
 
-  // Active menu
+/* =========================================
+   Active Navbar Link on Scroll
+========================================= */
+function activeNavbar() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
   window.addEventListener("scroll", () => {
     let current = "";
+
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 150;
-      if (pageYOffset >= sectionTop) {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.clientHeight;
+
+      if (
+        window.pageYOffset >= sectionTop &&
+        window.pageYOffset < sectionTop + sectionHeight
+      ) {
         current = section.getAttribute("id");
       }
     });
 
-    navLinks.forEach(a => {
-      a.classList.remove("active");
-      if (a.getAttribute("href") === "#" + current) {
-        a.classList.add("active");
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
       }
     });
   });
+}
 
-  // Scroll animation
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.2 });
+/* =========================================
+   Simple Scroll Reveal Animation
+========================================= */
+function scrollReveal() {
+  const revealElements = document.querySelectorAll(
+    ".hero, .section, .card"
+  );
 
-  sections.forEach(sec => {
-    sec.classList.add("hidden");
-    observer.observe(sec);
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  revealElements.forEach(el => {
+    el.classList.add("hidden");
+    observer.observe(el);
   });
-
-});
+}
