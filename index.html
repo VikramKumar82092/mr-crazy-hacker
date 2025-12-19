@@ -3,87 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikram Kumar | Creator & Engineer</title>
+    <title>Vikram Kumar Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="sidebar">
-        <div class="profile-section">
-            <div class="profile-img-container">
-                <img src="your-photo.jpg" alt="Vikram Kumar" class="nav-profile-pic">
+    <aside class="sidebar" id="sidebar">
+        <div class="profile-area">
+            <div class="circle-img">
+                <img src="my-photo.jpg" alt="Vikram Kumar">
             </div>
-            <h2>Vikram Kumar</h2>
+            <h1>Vikram Kumar</h1>
             <p>Creator / Hacker / Engineer</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#youtube">YOUTUBE</a></li>
-            <li><a href="#social">SOCIAL MEDIA</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <div class="footer-text">
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-link" data-target="youtube">YOUTUBE CHANNELS</a></li>
+                <li><a href="#" class="nav-link" data-target="social">SOCIAL MEDIA</a></li>
+                <li><a href="#" class="nav-link" data-target="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
             <p>© 2025 Vikram Kumar</p>
         </div>
-    </nav>
+    </aside>
 
-    <main class="content">
-        <section id="home" class="hero">
-            <div class="hero-text">
-                <h1>Hello! I am <br><span>Vikram Kumar</span></h1>
-                <p>Welcome to my corner of the internet. I build, create, and explore the worlds of technology, hacking, and Indian culture.</p>
-                <a href="#youtube" class="btn">VIEW MY WORK</a>
-            </div>
-            <div class="hero-image">
-                 <img src="your-photo-large.jpg" alt="Vikram Kumar Large">
-            </div>
-        </section>
-
-        <section id="youtube" class="youtube-section">
-            <h2 class="section-title">YOUTUBE CHANNELS</h2>
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <h3>Mr Crazy Hacker</h3>
-                    <a href="https://youtube.com/@mrcrazyhacker2026" target="_blank" class="yt-link">Visit Channel</a>
+    <main class="main-content">
+        
+        <section id="home" class="tab-content active">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <h2>Hello! I am</h2>
+                    <h3>Vikram Kumar</h3>
+                    <p>Welcome to my corner of the internet. I build, create, and explore the worlds of technology, hacking, and Indian culture.</p>
+                    <button class="btn-work">VIEW MY WORK</button>
                 </div>
-                <div class="channel-card">
-                    <h3>VKTronics</h3>
-                    <a href="https://youtube.com/@indianstockscryptomarket" target="_blank" class="yt-link">Visit Channel</a>
-                </div>
-                <div class="channel-card">
-                    <h3>Indian Culture</h3>
-                    <a href="https://youtube.com/@indianculture881" target="_blank" class="yt-link">Visit Channel</a>
-                </div>
-                <div class="channel-card">
-                    <h3>Technical Helper</h3>
-                    <a href="https://youtube.com/@prajapatop1" target="_blank" class="yt-link">Visit Channel</a>
+                <div class="hero-image">
+                    <img src="my-photo.jpg" alt="Vikram Kumar Large">
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>CONTACT</h2>
-                    <p><strong>Name:</strong> Vikram Kumar</p>
-                    <p><strong>Mobile:</strong> +91 8209234829</p>
-                    <p><strong>Email:</strong> vikramkumar3227@gmail.com</p>
-                    
-                    <div id="social" class="social-links">
-                        <h3>SOCIAL MEDIA</h3>
-                        <a href="https://www.facebook.com/share/17yEMC8xib/" target="_blank">Facebook</a>
-                        <a href="#">Instagram: ___________vikram__________</a>
-                    </div>
+        <section id="youtube" class="tab-content">
+            <h2 class="section-title">MY CHANNELS</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Mr Crazy Hacker</h4>
+                    <a href="https://youtube.com/@mrcrazyhacker2026" target="_blank">Visit Channel</a>
                 </div>
-                <div class="contact-form">
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>VKTronics</h4>
+                    <a href="https://youtube.com/@indianstockscryptomarket" target="_blank">Visit Channel</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Indian Culture</h4>
+                    <a href="https://youtube.com/@indianculture881" target="_blank">Visit Channel</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-youtube yt-icon"></i>
+                    <h4>Technical Helper</h4>
+                    <a href="https://youtube.com/@prajapatop1" target="_blank">Visit Channel</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class="tab-content">
+            <h2 class="section-title">SOCIAL MEDIA</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <i class="fab fa-instagram"></i>
+                    <p>___________vikram__________</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-facebook"></i>
+                    <p>Vikram Kumar</p>
+                    <a href="https://www.facebook.com/share/17yEMC8xib/" target="_blank">Open Facebook</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-box">
+                <div class="info">
+                    <p><strong>Mobile:</strong> 8209234829</p>
+                    <p><strong>Email:</strong> vikramkumar3227</p>
+                </div>
+                <div class="form">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
-                    <button class="btn">Send Message</button>
+                    <button class="btn-work">Send Message</button>
                 </div>
             </div>
         </section>
+
     </main>
 
     <script src="script.js"></script>
